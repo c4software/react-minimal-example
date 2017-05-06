@@ -15,8 +15,10 @@ class MyList extends Component {
   }
 }
 
+// « Connect » the props values to the « store »
 function mapStateToProps(state) {
   return { values: state }
 }
 
+// Tell to react-redux to connect.
 export default connect(mapStateToProps)(MyList)
