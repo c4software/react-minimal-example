@@ -16,9 +16,6 @@ class MyList extends Component {
 }
 
 // « Connect » the props values to the « store »
-function mapStateToProps(state) {
+export default connect(function(state){
   return { values: state }
-}
-
-// Tell to react-redux to connect.
-export default connect(mapStateToProps)(MyList)
+})(MyList)
