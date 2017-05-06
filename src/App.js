@@ -13,7 +13,6 @@ class App extends Component {
         <hr />
         <MyList />
         <MyInput />
-        <div className="note">Click the list to shuffle</div>
       </div>
     );
   }
