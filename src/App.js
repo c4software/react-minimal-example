@@ -61,15 +61,29 @@ class MyList extends Component {
   }
 }
 
-const values = ["Valentin", "Laureline", "Marie", "Sylvie"];
+class MyInput extends Component{
+  handleChange(e){
+    if (e.key === 'Enter') {
+      console.log(e.target.value);
+    }
+  }
+  render(){
+    return (
+      <input defaultValue="" placeholder="Enter data and press enter" onKeyPress={this.handleChange} type="text" />
+    )
+  }
+}
+
+var values = ["Valentin", "Laureline", "Marie", "Sylvie"];
 class App extends Component {
   render() {
     return (
       <div className="text-center">
-        <Titre value="Hello World" />
+        <Titre value="Bonjour Monde" />
         <hr />
         <MyList values={values} />
-        <span className="note">Click the list to shuffle</span>
+        <MyInput />
+        <div className="note">Click the list to shuffle</div>
       </div>
     );
   }
