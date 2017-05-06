@@ -6,11 +6,13 @@ import store from "../../redux";
 class MyInput extends Component{
   handleChange(e){
     if (e.key === 'Enter') {
-      store.dispatch({
-        type: 'ADD_TO_LIST',
-        text: e.target.value
-      })
-      e.target.value = "";
+      if(e.target.value){
+        store.dispatch({
+          type: 'ADD_TO_LIST',
+          text: e.target.value
+        })
+        e.target.value = "";
+      }
     }
   }
   render(){
