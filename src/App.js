@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 
 import Titre from './components/Titre';
 import MyInput from './components/MyInput';

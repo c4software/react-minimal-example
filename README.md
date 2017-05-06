@@ -1,5 +1,11 @@
 # Useless React Test
 
+Useless React Test. Implements :
+
+- Simple Component.
+- Minimalist react-redux.
+
+
 ## Install (can take a while)
 
 ```
