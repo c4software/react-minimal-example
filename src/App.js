@@ -38,7 +38,7 @@ class MyList extends Component {
   }
   createLi(){
     return this.state.values.map((v) =>
-      <li onClick={this.shuffle}>{v}</li>
+      <li key={v} onClick={this.shuffle}>{v}</li>
     );
   }
   shuffle(){
