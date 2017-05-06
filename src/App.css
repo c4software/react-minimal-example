@@ -1,0 +1,12 @@
+.text-center{
+  text-align: center;
+}
+
+h2{
+  cursor: pointer;
+}
+
+
+li{
+  list-style-type: none;
+}
