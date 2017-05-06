@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./index.css"
 
 class MyInput extends Component{
   handleChange(e){
