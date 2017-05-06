@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import "./index.css"
 
+import store from "../../redux";
+
 class MyInput extends Component{
   handleChange(e){
     if (e.key === 'Enter') {
-      console.log(e.target.value);
+      store.dispatch({
+        type: 'ADD_TO_LIST',
+        text: e.target.value
+      })
+      e.target.value = "";
     }
   }
   render(){
