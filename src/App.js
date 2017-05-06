@@ -5,12 +5,12 @@ class Titre extends Component{
   constructor(props){
     super(props);
     this.state = {count: 0};
-    this.activateLasers = this.activateLasers.bind(this);
+    this.counter = this.counter.bind(this);
   }
 
   componentDidMount() {
     this.timerID = setInterval(
-      () => this.activateLasers(),
+      () => this.counter(),
       1000
     );
   }
@@ -19,7 +19,7 @@ class Titre extends Component{
     clearInterval(this.timerID);
   }
 
-  activateLasers(){
+  counter(){
     var newCount = this.state.count+1;
     this.setState({count: newCount});
   }

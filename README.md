@@ -1,5 +1,11 @@
 # Useless React Test
 
+## Install (can take a while)
+
+```
+npm install
+```
+
 ## Start
 
 ```
