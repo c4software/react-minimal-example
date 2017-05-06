@@ -5,7 +5,6 @@ class Titre extends Component{
   constructor(props){
     super(props);
     this.state = {count: 0};
-    this.counter = this.counter.bind(this);
   }
 
   componentDidMount() {
@@ -23,9 +22,10 @@ class Titre extends Component{
     var newCount = this.state.count+1;
     this.setState({count: newCount});
   }
+
   render(){
     return (
-      <h2 onClick={this.activateLasers}>{this.state.count} - {this.props.value}</h2>
+      <h2>{this.state.count} - {this.props.value}</h2>
     )
   }
 }
@@ -69,6 +69,7 @@ class App extends Component {
         <Titre value="Hello World" />
         <hr />
         <MyList values={values} />
+        <span className="note">Click the list to shuffle</span>
       </div>
     );
   }
