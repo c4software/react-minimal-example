@@ -5,7 +5,6 @@ import {
 	Link
 } from 'react-router-dom'
 
-import './index.css';
 import Home from './views/home';
 import List from './views/list';
 
