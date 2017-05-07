@@ -4,6 +4,7 @@ Useless React Test. Implements :
 
 - Simple Component.
 - Minimalist react-redux.
+- Simple react-router usage.
 
 
 ## Install (can take a while)
