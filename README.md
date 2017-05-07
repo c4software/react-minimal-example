@@ -1,11 +1,10 @@
-# Useless React Test
+# React-minimal-example 
 
-Useless React Test. Implements :
+React Minimal Example. Implements :
 
 - Simple Component.
 - Minimalist react-redux.
 - Simple react-router usage.
-
 
 ## Install (can take a while)
 
@@ -19,7 +18,7 @@ npm install
 npm start
 ```
 
-## Build
+## Build (To be hosted on Nginx, Apache, any Webserver)
 
 ```
 npm build
