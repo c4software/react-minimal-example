@@ -2,7 +2,7 @@
 
 React Minimal Example. Implements :
 
-- Simple Component.
+- Simple Components.
 - Minimalist react-redux.
 - Simple react-router usage.
 
