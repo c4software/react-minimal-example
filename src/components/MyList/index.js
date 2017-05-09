@@ -5,7 +5,7 @@ import { connect } from "react-redux"
 class MyList extends Component {
   createLi(){
     return this.props.values.map((v) =>
-      <li key={v} onClick={this.shuffle}>{v}</li>
+      <li key={v}>{v}</li>
     );
   }
   render(){
