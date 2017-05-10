@@ -17,5 +17,5 @@ class MyList extends Component {
 
 // « Connect » the props values to the « store »
 export default connect(function(state){
-  return { values: state }
+  return { values: state.values }
 })(MyList)
